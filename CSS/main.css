@@ -1,14 +1,13 @@
 .caroussel{
     position: relative;
-    height: 200px;
-    width: 100%;
-    margin: 0 auto;
+    height: 250px;
+    margin: auto;
 }
 .caroussel__image{
     height: 100%;
 }
 .caroussel__track-container{
-    background-color: red;
+    background-color: white;
     height: 100%;
     position: relative;
     border-radius: 20px;
@@ -17,6 +16,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
 }
 .caroussel__slide{
     position: absolute;

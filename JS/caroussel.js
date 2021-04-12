@@ -8,9 +8,8 @@ window.addEventListener('load', function () {
     const dotsNav = document.querySelector('.caroussel__nav');
     const dots = Array.from(dotsNav.children);
 
-   var styleLeftOffset = 0;
-    console.log(slides[0].querySelector('.caroussel__image').width);
-    console.log(slides.length)
+    var styleLeftOffset = 0;
+
     for (i = 0; i < slides.length; i++) {
         if (i == 0) {
             offset = 0;
@@ -21,38 +20,36 @@ window.addEventListener('load', function () {
         slides[i].style.left = offset + 'px';
     }
 
-    const moveToSlide = (track, currentSlide, targetSlide, direction, position) => {     
-        console.log(position);
+    const moveToSlide = (track, currentSlide, targetSlide, direction) => {
         currentSlide.classList.remove('current-slide');
         targetSlide.classList.add('current-slide');
-        
-        if(direction == 'left'){
-            position += targetSlide.children[0].width;
-            track.style.left = position +'px';
-            console.log(targetSlide.children[0].width);
+
+        if (direction == 'left') {
+            styleLeftOffset += targetSlide.children[0].width;
+            track.style.left = styleLeftOffset + 'px';
+            console.log(styleLeftOffset);
         }
-        else{
-            position += -targetSlide.children[0].width;
-            track.style.left -= -position +'px';
-            console.log(targetSlide.children[0].width);
+        else {
+            styleLeftOffset -= targetSlide.children[0].width;
+            track.style.left = styleLeftOffset + 'px';
+            console.log(styleLeftOffset);
         }
     }
 
     nextButton.addEventListener('click', e => {
-        
+
         const currentSlide = track.querySelector('.current-slide')
         const nextSlide = currentSlide.nextElementSibling;
-        
-        moveToSlide(track, currentSlide,nextSlide, 'right', track.style.left);
-        
+        moveToSlide(track, currentSlide, nextSlide, 'right');
+
     })
 
     prevButton.addEventListener('click', e => {
         const currentSlide = track.querySelector('.current-slide')
         const previousSlide = currentSlide.previousElementSibling;
         moveToSlide(track, currentSlide, previousSlide, 'left');
-        
+
     })
-    
+
 });
 

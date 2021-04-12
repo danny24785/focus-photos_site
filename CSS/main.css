@@ -18,6 +18,9 @@
     list-style: none;
     position: relative;
     height: 100%;
+    animation: 20ms;
+    overflow: hidden;
+    transition: transform 1000ms ease-in;
 }
 .caroussel__slide{
     position: absolute;
@@ -26,14 +29,17 @@
     width: fit-content;
 }
 .caroussel__button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     position: absolute;
-    background-color: transparent;
+    background-color: white;
     border: none;
     top: 50%;
     transform: translateY(-50%);
 }
 .caroussel__button--left{
-    left : 0;
+    left: 0;
     z-index: 1;
 }
 .caroussel__button--right{

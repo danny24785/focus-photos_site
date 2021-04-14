@@ -65,6 +65,20 @@ window.addEventListener('load', function () {
         moveToSlide(track,currentSlide,targetSlide);
         currentDot.classList.remove('current-slide');
         targetDot.classList.add('current-slide');
+
+        if(targetIndex == 0){
+            prevButton.classList.add('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        }
+        else if(targetIndex == dots.length -1){
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.add('is-hidden');
+        }
+        else{
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        }
+
     })
 });
 

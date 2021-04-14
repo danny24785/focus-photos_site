@@ -1,12 +1,22 @@
+h1,h2,h3,p{
+    margin: 0;;
+}
+
 body{
+    width: 100%;
     margin: 0;
 }
 
+section{
+    padding: 2rem 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
 .menu{
     position: relative;
-    width: 100vw;
-    height: 60px;
-
+    padding:1em;
     display: grid;
     columns: 30vw 30vw 10vw 10vw 10vw 10vw;
 }
@@ -40,10 +50,8 @@ body{
 }
 .caroussel{
     position: relative;
-    height: 350px;
-    width: 100%;
-    overflow: hidden;
-    
+    height: 25vh;
+    max-width: 100%;
 }
 .caroussel__image{
     height: 100%;
@@ -53,6 +61,7 @@ body{
     background-color: white;
     height: 100%;
     position: relative;
+    overflow : hidden;
 }
 .caroussel__track{
     padding: 0;
@@ -93,39 +102,25 @@ body{
     height: 32px;
 }
 .caroussel__nav{
+    max-width: 100%;
     display: flex;
     justify-content: center;
-    transform: translateY(-345px);
 }
 .caroussel__indicator{
+    display: block;
     height: 30px;
     width: 30px;
-    border: 4;
-    border-color: white;
     border-radius: 50%;
     margin: 0 3px;
     background-color: rgba(0, 0, 0, .5);
     cursor:pointer;
 }
 .caroussel__indicator.current-slide{
-    background-color: rgba(40, 120, 211, 0.8);
+    background-color: rgba(91, 155, 238, 0.8);
 }
 
-.content{
-    display: grid;
-    grid-template-columns: 60% 40%;
-    height: 30vw;
-    width: 100vw;
-    background-color: black;
-    overflow: hidden;
-}
-.content__round {
-    grid-column: 1/2;
-    width: 350px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    background-color: red;
+.is-hidden{
+    display: none;
 }
 
 .content__round-image{
@@ -134,3 +129,55 @@ body{
     justify-self: center;
 }
 
+#about-me{
+    grid-column: 2/3;
+    font-size: 20;
+    color: black;
+    width: 100%;
+    display: flex;
+    margin:auto;
+}
+.container{
+    width: min(90%, 70rem);
+    margin-inline: auto;
+}
+.splitter{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding: 2rem;
+}
+.splitter > * + *{
+    margin-top: 2em;
+}
+.image-container{
+    max-height:650px;
+    max-width:650px;
+}
+.image-round{
+
+    margin: auto;
+    height: 100%;
+    border-radius: 50%;
+    overflow:hidden;
+  }
+.center-text{
+    text-align: center;
+}
+
+@media (min-width: 40em) {
+    .splitter{
+        flex-direction: row;
+    }
+    .splitter > * {
+        flex-basis: 100%;
+    }
+    .splitter > * + *{
+        margin-left: 2em;
+    }
+
+    .image-container{
+        max-height:80%;
+        max-width: 80%;
+    }
+}

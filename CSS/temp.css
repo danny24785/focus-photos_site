@@ -1,0 +1,17 @@
+.content{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 50vw;
+    width: 100vw;
+}
+.content__round {
+    grid-column: 1/2;
+    width: 350px;
+    height:350px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    box-shadow: 0 0 0 30px #fdc997,0 0 0 33px black , 20px 20px 50px 30px#917256;
+}

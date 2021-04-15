@@ -1,116 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="CSS/main.css" >
 </head>
-
 <body>
-    <div class="menu">
-        <button class="logo">
+    <section>
+        <button class="logo-social">
             <img src="Images/Icons/logo-instagram.png" alt="" class="logo__image">
         </button>
         <a class="menu__item" id="menu1"> Menu 1</a>
         <a class="menu__item" id="menu2"> Menu 2</a>
         <a class="menu__item" id="menu3"> Menu 3</a>
         <a class="menu__item" id="menu4"> Menu 4</a>
-    </div>
+    </section>
+    
+    <section >
+        <div class="caroussel">
+            <button class="caroussel__button caroussel__button--left is-hidden">
+                <img src="Images/Icons/icons8-double_left.png" alt="">
+            </button>
+    
+            <div class="caroussel__track-container">
+                <ul class="caroussel__track">
+                    <li class="caroussel__slide current-slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-01.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-02.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide ">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-03.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-04.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-05.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-06.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-07.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide current-slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-08.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-09.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide ">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-10.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-11.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-12.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-13.jpg" alt="">
+                    </li>
+                    <li class="caroussel__slide">
+                        <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-14.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+    
+            <button class="caroussel__button caroussel__button--right">
+                <img src="Images/Icons/icons8-double_right.png" alt="">
+            </button>
 
-    <div class="caroussel">
-        <button class="caroussel__button caroussel__button--left is-hidden">
-            <img src="Images/Icons/icons8-double_left.png" alt="">
-        </button>
+            <div class="caroussel__nav">
+                <button class="caroussel__indicator current-slide"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+                <button class="caroussel__indicator"></button>
+            </div>
 
-        <div class="caroussel__track-container">
-            <ul class="caroussel__track">
-                <li class="caroussel__slide current-slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-01.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-02.jpg" alt="">
-                </li>
-                <li class="caroussel__slide ">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-03.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-04.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-05.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-06.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-07.jpg" alt="">
-                </li>
-                <li class="caroussel__slide current-slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-08.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-09.jpg" alt="">
-                </li>
-                <li class="caroussel__slide ">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-10.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-11.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-12.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-13.jpg" alt="">
-                </li>
-                <li class="caroussel__slide">
-                    <img class="caroussel__image" src="Images/Fotos_Klein/focusphotos-14.jpg" alt="">
-                </li>
-            </ul>
-        </div>
+    </section>
 
-        <button class="caroussel__button caroussel__button--right">
-            <img src="Images/Icons/icons8-double_right.png" alt="">
-        </button>
-    </div>
-        <div class="caroussel__nav">
-            <button class="caroussel__indicator current-slide"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-            <button class="caroussel__indicator"></button>
-        </div>
-
-    <section>
+    <section class="bg-light">
         <div class="container">
             <div class="splitter">
-                <div class="content">
-                    <h1 class="center-text"> About me</h1>
+                <div>
+                    <h2 class="center-text content-title"> About me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sit doloremque est praesentium. Sit, assumenda perspiciatis asperiores consequuntur commodi delectus. Omnis, quibusdam necessitatibus rem vero ea quidem natus amet, reiciendis iste facilis deserunt quae maxime perspiciatis. Ipsam facilis fuga ea numquam, sequi officia commodi, molestiae laboriosam maxime tempora blanditiis explicabo perferendis asperiores aliquam eos dolore quaerat dolorum quos! Natus est placeat ullam architecto nihil quaerat voluptates quas, aut id culpa iste vel quia voluptas ipsam illo repellendus, doloremque porro, expedita optio! Blanditiis accusamus rem ipsa quas culpa cumque aut! Natus numquam maiores minima illo aliquam dicta laboriosam nulla necessitatibus dignissimos!</p>
                 </div>
                 <div class="image-container">
-                    <div class="image-round">                    
-                        <img id="round-image" src="Images/Fotos_Klein/EOSR2737.jpg" alt="">
-                    </div> 
+                    <img class="image-round" src="Images/Fotos_Klein/foto_stefan_natasja.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container">
+            <div class="splitter">
+                <div class="image-container">
+                    <img class="image-round" src="Images/Fotos_Klein/honkbal-johan.jpg" alt="">
+                </div>
+                <div>
+                    <h2 class="center-text content-title"> Sport fotografie</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sit doloremque est praesentium. Sit, assumenda perspiciatis asperiores consequuntur commodi delectus. Omnis, quibusdam necessitatibus rem vero ea quidem natus amet, reiciendis iste facilis deserunt quae maxime perspiciatis. Ipsam facilis fuga ea numquam, sequi officia commodi, molestiae laboriosam maxime tempora blanditiis explicabo perferendis asperiores aliquam eos dolore quaerat dolorum quos! Natus est placeat ullam architecto nihil quaerat voluptates quas, aut id culpa iste vel quia voluptas ipsam illo repellendus, doloremque porro, expedita optio! Blanditiis accusamus rem ipsa quas culpa cumque aut! Natus numquam maiores minima illo aliquam dicta laboriosam nulla necessitatibus dignissimos!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <script src="JS/caroussel.js"></script>
-
 </body>
-
 </html>

@@ -1,12 +1,14 @@
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: orange;
     padding-left: 5%;
     padding-right: 2%;
     height: 8vh;
 }
-
+.menu{
+    display: flex;
+    padding: 0 1em;
+    justify-content: space-between;
+}
 button {
     border:none;
     cursor: pointer;
@@ -24,12 +26,21 @@ button:hover{
 }
 
 .logo_focus{
+    background-color: blue;
     cursor: pointer;
     max-height: 9vh;
 }
 
+.nav{
+    width: 500px;
+    height: 100%;
+    background-color: red;
+}
 .nav__links{
-    list-style: none;
+    display: inline-block;
+}
+/* .nav__links{
+    list-style:circle;
 }
 
 .nav__links li{
@@ -43,4 +54,4 @@ button:hover{
 
 .nav__links li a:hover{
     color: red
-}
+} */

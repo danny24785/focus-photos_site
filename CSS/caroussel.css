@@ -1,7 +1,9 @@
 .caroussel{
+    z-index: 10;
     position: relative;
     height: 25vh;
     max-width: 100%;
+    background-color: orange;
 }
 .caroussel__image{
     height: 100%;
@@ -41,12 +43,10 @@
 .caroussel__button--left{
     box-shadow: 0 0 50px 8px rgba(255, 255, 255, 0.8);
     left: 0;
-    z-index: 1;
 }
 .caroussel__button--right{
     box-shadow: 0 0 50px 8px rgb(255, 255, 255, 0.8);
     right : 0;
-    z-index: 1;
 }
 .caroussel__button img{
     width: 32px;

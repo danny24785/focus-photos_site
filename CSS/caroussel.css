@@ -1,9 +1,10 @@
 .caroussel{
+    top: 50px;
     z-index: 10;
     position: relative;
-    height: 25vh;
+    height: 250px;
     max-width: 100%;
-    background-color: orange;
+    background-color: black;
 }
 .caroussel__image{
     height: 100%;

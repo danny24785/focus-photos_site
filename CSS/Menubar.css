@@ -3,6 +3,8 @@
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     background-color: black;
     text-align: center;
     position: fixed;
@@ -10,7 +12,20 @@ header {
     z-index: 1000;
     padding: 0;
 }
+.logo__container{
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+}
 
+.logo__instagram{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.logo{
+    grid-column: 2/3;
+}
 .nav__toggle__label span,
 .nav__toggle__label span::before,
 .nav__toggle__label span::after{
@@ -101,7 +116,7 @@ nav a:hover{
 
     header{
         display: grid;
-        grid-template-columns: 1fr auto minmax(590px, 5fr) 1fr;
+        grid-template-columns: 10px 250px 3fr 1fr;
     }
 
     .logo{
@@ -146,6 +161,7 @@ nav a:hover{
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        grid-column: 4/5;
     }
     button{
         position: absolute;
@@ -153,6 +169,7 @@ nav a:hover{
         
     }
     .logo__instagram{
+        grid-row:0/1;
         width: 25px;
         height: 25px;
     }

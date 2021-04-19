@@ -66,12 +66,11 @@
 }
 
 .caroussel__nav{
-    background-color: white;
+    background-color: red;
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: .5em;
-
 }
 .caroussel__indicator{
     height: 15px;

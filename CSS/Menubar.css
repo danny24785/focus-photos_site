@@ -1,5 +1,5 @@
 :root{
-    --clr--text--light : #d6970f;
+    --clr--text--light : #f3bf4d;
 }
 
 header {
@@ -141,5 +141,19 @@ nav a:hover{
 
     nav a:hover::before{
         transform: scale(1,1);
+    }
+    .logo__container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    button{
+        position: absolute;
+        right: 10px;
+        
+    }
+    .logo__instagram{
+        width: 25px;
+        height: 25px;
     }
 }

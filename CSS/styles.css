@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap');
 :root{
     --clr-primary-100: white;
-    --clr-primary-400: #824936;
+    --clr-primary-400: #f3bf4d;
 
     --ff-content: 'roboto', sans-serif;
     --ff-header: 'Playfair Display', serif;
@@ -106,7 +106,7 @@ body {
 }
 
 .bg-dark{
-    color: var(--clr-primary-100);
+    color: black;
     background-color: var(--clr-primary-400);
 }
 .image-container{

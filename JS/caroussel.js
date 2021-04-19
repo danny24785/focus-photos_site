@@ -39,11 +39,29 @@ window.addEventListener('load', function () {
 
     }
 
+    const slideAvailable = (targetIndex) => {
+        if(targetIndex == 0){
+            prevButton.classList.add('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        }
+        else if(targetIndex == dots.length -1){
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.add('is-hidden');
+        }
+        else{
+            prevButton.classList.remove('is-hidden');
+            nextButton.classList.remove('is-hidden');
+        }
+    }
+
     prevButton.addEventListener('click', e =>{
         const currentSlide = track.querySelector('.current-slide');
         const prevSlide = currentSlide.previousElementSibling;
-        
+
         moveToSlide(track, currentSlide,prevSlide);
+
+
+        slideAvailable(slides.findIndex(q => q == prevSlide));
     })
 
     nextButton.addEventListener('click', e =>{
@@ -51,6 +69,7 @@ window.addEventListener('load', function () {
         const nextSlide = currentSlide.nextElementSibling;
 
         moveToSlide(track, currentSlide,nextSlide);
+        slideAvailable(slides.findIndex(q => q == nextSlide));
     })
 
     dotsNav.addEventListener('click', e => {
@@ -66,18 +85,7 @@ window.addEventListener('load', function () {
         currentDot.classList.remove('current-slide');
         targetDot.classList.add('current-slide');
 
-        if(targetIndex == 0){
-            prevButton.classList.add('is-hidden');
-            nextButton.classList.remove('is-hidden');
-        }
-        else if(targetIndex == dots.length -1){
-            prevButton.classList.remove('is-hidden');
-            nextButton.classList.add('is-hidden');
-        }
-        else{
-            prevButton.classList.remove('is-hidden');
-            nextButton.classList.remove('is-hidden');
-        }
+        slideAvailable(targetIndex);
 
     })
 });

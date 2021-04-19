@@ -31,6 +31,7 @@
     width: 100%;
 }
 .caroussel__button{
+    z-index: 50;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -42,17 +43,28 @@
     cursor:pointer;
 }
 .caroussel__button--left{
-    box-shadow: 0 0 50px 8px rgba(255, 255, 255, 0.8);
-    left: 0;
+    box-shadow: 0 0 50px 20px rgba(255, 255, 255, 0.8);
+    left: 10px;
 }
 .caroussel__button--right{
-    box-shadow: 0 0 50px 8px rgb(255, 255, 255, 0.8);
-    right : 0;
+    box-shadow: 0 0 50px 8px rgba(255, 255, 255, 0.8);
+    right : 10px;
 }
-.caroussel__button img{
+.caroussel__button--right > img{
+    position: absolute;
+    left: 5px;
+    bottom: 4px;
     width: 32px;
     height: 32px;
 }
+.caroussel__button--left > img{
+    position: absolute;
+    left: 3px;
+    bottom: 4px;
+    width: 32px;
+    height: 32px;
+}
+
 .caroussel__nav{
     background-color: white;
     width: 100%;

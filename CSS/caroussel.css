@@ -72,6 +72,11 @@
     justify-content: center;
     padding-top: .5em;
 }
+
+.caroussel__nav button {
+    position: relative;
+}
+
 .caroussel__indicator{
     height: 15px;
     width: 15px;
